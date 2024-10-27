@@ -14,5 +14,11 @@ if (moreThanEight.length){
 // Expected Output: “banana”, “peach”, “cranberry”, “raspberry"
 
 let fruit = [ 'banana', 'apple', 'strawberry', 'peach', 'cranberry', 'strawberry', 'raspberry', 'apple']
-const duplicates = fruit.filter((item, index) => fruit.indexOf(item) === index);
-console.log(duplicates);
+
+
+
+
+//Print out the new array in ascending alphabetical order and each value in UPPERCASE letters
+const newArray = [ 'banana', 'peach', 'cranberry', 'raspberry']
+newArray = newArray.sort();
+
