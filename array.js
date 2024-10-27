@@ -1,6 +1,9 @@
 let fruits = [ 'banana', 'apple', 'strawberry', 'peach', 'cranberry', 'strawberry', 'raspberry', 'apple']
 
-const moreThanEight = fruits.some (fruits => fruits.length > 8);
+const moreThanEight = fruits.filter (fruits => fruits.length > 8);
 
-console.log(moreThanEight);
-
+if (moreThanEight.length){
+    console.log( moreThanEight)
+} else {
+    console.log("Sorry, nothing to show!")
+}
