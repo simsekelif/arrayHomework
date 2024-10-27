@@ -11,10 +11,10 @@ let fruit = [
 
 let similar = [];
 
-for (let i = 0; i < fruit.length; i++) {
-    let firstElement = fruit[i];
+for (let index = 0; index < fruit.length; index++) {
+    let firstElement = fruit[index];
 
-    for (let j = i + 1; j < fruit.length; j++) {
+    for (let j = index + 1; j < fruit.length; j++) {
         let secondElement = fruit[j];
 
         if (firstElement === secondElement) {
@@ -31,5 +31,12 @@ const result = fruit.filter((item) => {
     }
 })
 
-console.log(similar)
 console.log(result);
+
+// //Print out the new array in ascending alphabetical order and each value in UPPERCASE letters
+
+newArrayUpper = result.sort().map(function(element){
+    return element.toUpperCase();
+});
+console.log(newArrayUpper);
+
