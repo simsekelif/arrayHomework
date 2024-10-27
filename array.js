@@ -10,3 +10,9 @@ if (moreThanEight.length){
 } else {
     console.log("Sorry, nothing to show!")
 }
+// //Print out the duplicate values and create a new array without them (not adding them even once) by iterating over its elements (Hint: you need the indexOf function for arrays)
+// Expected Output: “banana”, “peach”, “cranberry”, “raspberry"
+
+let fruit = [ 'banana', 'apple', 'strawberry', 'peach', 'cranberry', 'strawberry', 'raspberry', 'apple']
+const duplicates = fruit.filter((item, index) => fruit.indexOf(item) === index);
+console.log(duplicates);
